@@ -57,7 +57,14 @@ The real tDCS protocol lasted for 20 min of continuous stimulation at 1 mA, wher
 
 A 7-point Likert-scale was used to assess the amount of discomfort and the blinding efficacy of the FSF protocol. For the discomfort, participants received the question “Please rate to what extent did you find the electrodes disturbing during the experiment (eg., cold or wet, tingling or itching)?” (1: not at all - 7: very strong). For the blinding efficacy, participants received the question “What do you think, did you receive real or sham/control stimulation?”  (1: definitely sham - 7: definitely real). The questionnaires were filled out at the end of the experiment. 
 
+## Analysis method
+
+It has recently pointed out that treating ordinal variables, such as responses to Likert-scales, as metric can have a strong impact on the validity of the statistical analyses: It can distort effect-size estimates, inflate error rates and cause other problems [@liddell2018analyzing,@buerkner_vuorre_2018]. Despite these severe problems, treating ordinal variables as metric is extremely common in psychology and related disciplines [@liddell2018analyzing]. A more appropriate approach uses specific ordinal models such as ordinal probit regression [@buerkner_vuorre_2018]. Here we use a Bayesian approach to estimate such a model as implemented in the R-package `brms` [@buerkner_2018_brms]. We report our results in terms of posterior mean parameters along with the 95% highest-density interval (HDI) calculated from posterior distribution. This interval quantifies the interval in which the true parameter is located with 95% probability given the applied model. We conclude that a parameter is different from zero if the 95% interval excludes zero. In addition, we use Bayesian methods for model selection based on the leave-one-out crossvalidation procedure (LOO; @vehtari2017practical). 
+
 # Results and Discussion
+
+
+
 
 ![description](pics/blinding.png)
 
