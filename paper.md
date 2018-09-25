@@ -35,7 +35,7 @@ additionalinformation: |
 
 # Introduction
 
-Low-intensity transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation method, which applies direct current between two or more electrodes placed over the scalp. TDCS is typically applied at intensities between 1 and 2 mA, which induces mild to moderate amount of adverse-effects in most of the participants (Poreisz 2007). These adverse-effects include cutaneous discomfort (eg., itching, tingling, piercing, stinging, burning sensations) (Fertonani 2015) and redness underneath the electrodes (O’Connel 2012; Palm 2014). 
+Low-intensity transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation method, which applies direct current between two or more electrodes placed over the scalp. TDCS is typically applied at intensities between 1 and 2 mA, which induces mild to moderate amount of adverse-effects in most of the participants (Poreisz 2007). These adverse-effects include cutaneous discomfort (eg., itching, tingling, piercing, stinging, burning sensations) (Fertonani 2015) and redness underneath the electrodes (O’Connel 2012; Palm 2014) [@palm2014role]. 
 
 Most studies use active sham stimulation protocol for placebo control. The aim of the active sham stimulation is to induce adverse-effects that are reminiscent of the real tDCS protocol without inducing the neurophysiologically relevant primary effects and after-effects. The most frequently applied active sham stimulation is the so called 'fade-in, short-stimulation, fade-out' (FSF) protocol (Ambrus 2012), which maintains effective blinding depending on the intensity and the duration of the real tDCS protocol. Accumulating evidence indicate that the blinding efficacy of the FSF protocol is more effective when the real tDCS is applied at lower intensities and for shorter stimulation durations. For instance, the blinding efficacy of the FSF protocol is already compromised when 10 or 20 min of tDCS is applied at 1.5 mA (Kessler 2012). Likewise, effective double-blinding cannot be achieved by the FSF protocol for 20 or 30 min of 2 mA tDCS (O’Connel 2012; Russo 2013; Wallace 2016). 
 
@@ -61,4 +61,6 @@ A 7-point Likert-scale was used to assess the amount of discomfort and the blind
 
 ![description](pics/blinding.png)
 
+
 # References
+

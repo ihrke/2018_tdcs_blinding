@@ -3,7 +3,7 @@ BIBLIOGRAPHY=references.bib
 TEMPLATE=templates/elsarticle-template-1-num.latex
 #TEMPLATE=templates/scientific_reports.latex
 PANDOC=pandoc
-USE_NATBIB=--biblatex #--natbib
+USE_NATBIB=--natbib #--biblatex 
 
 export TEXINPUTS=.:./templates/dependencies//:
 export BIBINPUTS=.:./templates/dependencies//:
