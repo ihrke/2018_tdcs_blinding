@@ -2,18 +2,44 @@
 title:  'Compromised Effective Blinding for transcranial direct current stimulation at 1 mA for 20 min in Young Healthy Individuals'
 journal: 'Brain Stimulation'
 author:
-- name: Me Ofcourse
-  footnote: 1
-- name: Some Otherdude
-  footnote: 1
-- name: And Thisguy
+- name: Zsolt Turi
   footnote: 2
-  corresponding: and.thisguy@otherplace.org
+- name: Gábor Csifcsák
+  footnote: 1
+- name: Nya Mehnwolo Boayue
+  footnote: 1
+- name: Per Aslaksen
+  footnote: 1
+- name: Andrea Antal
+  footnote: 2
+- name: Josephine Groot
+  footnote: 1,3
+- name: Guy E. Hawkins
+  footnote: 4
+- name: Birte Forstmann
+  footnote: 3
+- name: Alexander Opitz
+  footnote: 5
+- name: Axel Thielscher
+  footnote: 6,7
+- name: Matthias Mittner
+  footnote: 1
+  corresponding: matthias.mittner@uit.no
 affiliation:
 - number: 1
-  name: Institute of Psychology, University of Tromsø, Tromsø, Norway
+  name: Department of Psychology, University of Tromsø
 - number: 2
-  name: Department of Clinical Neurophysiology, University Medical Center Goettingen, Georg-August University, Goettingen, Germany
+  name: Department of Clinical Neurophysiology, University Medical Center Göttingen
+- number: 3
+  name: Integrative Model-based Cognitive Neuroscience Research Unit, University of Amsterdam
+- number: 4
+  name: School of Psychology, University of Newcastle
+- number: 5
+  name: Department of Biomedical Engineering, University of Minnesota
+- number: 6
+  name: Danish Research Centre for Magnetic Resonance, Copenhagen University Hospital Hvidovre
+- number: 7
+  name: Department of Electrical Engineering, Technical University of Denmark
 keyword:
   - tDCS
   - blinding
@@ -59,22 +85,27 @@ A 7-point Likert-scale was used to assess the amount of discomfort and the blind
 
 ## Analysis method
 
-It has recently pointed out that treating ordinal variables, such as responses to Likert-scales, as metric can have a strong impact on the validity of the statistical analyses: It can distort effect-size estimates, inflate error rates and cause other problems [@liddell2018analyzing,@buerkner_vuorre_2018]. Despite these severe problems, treating ordinal variables as metric is extremely common in psychology and related disciplines [@liddell2018analyzing]. A more appropriate approach uses specific ordinal models such as ordinal probit regression [@buerkner_vuorre_2018]. Here we use a Bayesian approach to estimate such a model as implemented in the R-package `brms` [@buerkner_2018_brms]. We report our results in terms of posterior mean parameters along with the 95% highest-density interval (HDI) calculated from posterior distribution. This measure quantifies the interval in which the true parameter is located with 95% probability given the applied model. We conclude that a parameter is different from zero if the 95% interval excludes zero. In addition, we use Bayesian methods for model selection based on the leave-one-out crossvalidation procedure (LOO; @vehtari2017practical). The data analysis script used for this study is available here (\textcolor{red}{todo: link}).
-
+It has recently pointed out that treating ordinal variables, such as responses to Likert-scales, as metric can have a strong impact on the validity of the statistical analyses: It can distort effect-size estimates, inflate error rates and cause other problems [@liddell2018analyzing,@buerkner_vuorre_2018]. Despite these severe problems, treating ordinal variables as metric is extremely common in psychology and related disciplines [@liddell2018analyzing]. A more appropriate approach uses specific ordinal models such as ordinal probit regression [@buerkner_vuorre_2018]. Here we use a Bayesian approach to estimate such a model as implemented in the R-package `brms` [@buerkner_2018_brms]. We report our results in terms of posterior mean parameters along with the 95% highest-density interval (HDI) calculated from posterior distribution. This measure quantifies the interval in which the true parameter is located with 95% probability given the applied model. We conclude that a parameter is different from zero if the 95% interval excludes zero. We used the default priors implemented in the `brms`-package [@buerkner_2018_brms]. Those include uniform priors for all regression coefficients and a Students' t-prior centered at zero with df=3 and sd=10 for the thresholds.
+In addition, we use Bayesian methods for model selection based on the leave-one-out crossvalidation procedure (LOO; @vehtari2017practical). The data analysis script used for this study is available here (\textcolor{red}{todo: link}).
 
 # Results and Discussion
 
-\color{red} Results and interpretation comes here.
+\color{red} Results and interpretation comes here. \color{black}
+
+Our results are summarized graphically in figure @fig:results. Regarding the blinding efficacy, excluding subjects who were undecided, there were 2.6 as many subjects in the real stimulation group who guessed that they received real stimulation (52 with scores $>4$ vs. 20 with scores $<4$). In contrast, this figure was only 1.19 for the sham group (38 with scores $>4$ vs. 32 with scores $<4$). We submitted these responses for guessing stimulation condition to an ordinal regression models using lab and actual stimulation condition as predictors. 
 
 
 
-\color{red} These are just possible topics for the discussion, in case we are within the word limit: \color{black} Most studies that recruite healthy participants investigate the effects of single-session tDCS. In parallel-group studies, single-session refers to the notion that participants receive either real or active sham tDCS once, whereas in cross-over studies, participants receive both stimulation types once in a randomized or counterbalanced order. In healthy participants, exposure to both real and active sham tDCS increases the probability of correct guessings about the stimulation type already on the second session [@o2012rethinking]. In line with this, Ambrus and colleagues have shown that participants who have prior experience with tDCS judge the stimulation type more accurately than those participants who had no prior experience with tDCS [@ambrus2010cutaneous]. Here we have shown that young, healthy participants can corectly judge the stimulation type above chance in a single-session, parallel-group tDCS study. The accuracy of identifying the stimulation type may depend on the study cohort and might not necessarily be related to the stimulation induced cutaneous discomfort [@brunoni2014comparison].  
+\color{red} These are just possible topics for the discussion, in case we are within the word limit: \color{black} 
+
+Most studies that recruite healthy participants investigate the effects of single-session tDCS. In parallel-group studies, single-session refers to the notion that participants receive either real or active sham tDCS once, whereas in cross-over studies, participants receive both stimulation types once in a randomized or counterbalanced order. In healthy participants, exposure to both real and active sham tDCS increases the probability of correct guessings about the stimulation type already on the second session [@o2012rethinking]. In line with this, Ambrus and colleagues have shown that participants who have prior experience with tDCS judge the stimulation type more accurately than those participants who had no prior experience with tDCS [@ambrus2010cutaneous]. Here we have shown that young, healthy participants can corectly judge the stimulation type above chance in a single-session, parallel-group tDCS study. The accuracy of identifying the stimulation type may depend on the study cohort and might not necessarily be related to the stimulation induced cutaneous discomfort [@brunoni2014comparison].  
 
 The FSF in only one type of protocol in the family of active sham stimulation for tDCS. New forms of real tDCS protocols that use higher stimualtion intensities, longer stimulation durations and higher number but smaller diameter electrodes inevitably pushes the field to develop and improve the efficacy of active sham protocols for tDCS. Palm and collegues introduced low-intensity pulsating active sham protocol, in which 100-200 mA amplitude pulses are applied at every 400-550 ms, which is a promising protocol for low-intensity but longer-lasting real tDCS protocols [@palm2013evaluation]. For higher stimulation intensities (e.g. 2 mA and above), one could use off-target, low-intensity control stimulation (e.g., at 0.5 mA) to decrease the perceived differences in the induced cutaneous sensations [@brunye2014mitigating]. Whereas the aim of the active sham protocol is to induce cutaneous sensations indistinguishable from the real tDCS, an alternative approach may focus to reduce the tDCS-induced cutaneous sensations by applying topical anesthesia [@mcfadden2011reducing; @guleyupoglu2014reduced; @guarienti2015reducing]. 
 
 
-![description](pics/blinding.png)
+![description](pics/blinding.png){#fig:results}
 
 
 # References
 
+<!-- -->
