@@ -176,7 +176,7 @@ names(tab)[4]<- paste0(names(tab)[4], footnote_marker_alphabet(2, "latex"))
 names(tab)[5]=paste0("95\\% HDI", footnote_marker_alphabet(3, "latex"))
 names(tab)[6]<- paste0(names(tab)[6], footnote_marker_alphabet(4, "latex"))
 tab%>%
-  knitr::kable(digits = 2, escape = F, format = "latex", align=c("l", "l", "c", "c", "l", "c", "c"), booktabs=T, caption = "Summary of models for the blinding question.") %>%
+  knitr::kable(digits = 2, escape = F, format = "latex", align=c("l", "l", "c", "c", "l", "c", "c"), booktabs=T, caption = "\\label{tab:q6}Summary of models for the blinding question.") %>%
   kable_styling(full_width = T, latex_options=c("striped", "scale_down"), position="center")  %>%
   column_spec(2,width="2cm") %>%
   column_spec(5,width="2cm") %>%
@@ -290,7 +290,7 @@ names(tab)[4]<- paste0(names(tab)[4], footnote_marker_alphabet(2, "latex"))
 names(tab)[5]=paste0("95\\% HDI", footnote_marker_alphabet(3, "latex"))
 names(tab)[6]<- paste0(names(tab)[6], footnote_marker_alphabet(4, "latex"))
 tab%>%
-  knitr::kable(digits = 2, escape = F, format = "latex", align=c("l", "l", "c", "c", "l", "c", "c"), booktabs=T, caption = "Summary of models for the blinding question.") %>%
+  knitr::kable(digits = 2, escape = F, format = "latex", align=c("l", "l", "c", "c", "l", "c", "c"), booktabs=T, caption = "\\label{tab:q3}Summary of models for the discomfort question.") %>%
   kable_styling(full_width = T, latex_options=c("striped", "scale_down"), position="center")  %>%
   column_spec(2,width="2cm") %>%
   column_spec(5,width="2cm") %>%

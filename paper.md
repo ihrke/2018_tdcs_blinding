@@ -48,7 +48,7 @@ abstract: |
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 linenumbers: true
-bibliography: references.bib
+bibliography: references.bib 
 acknowledgements: |
   We'd like to thank bla bla and blablab
 contribution: | 
@@ -106,6 +106,6 @@ The FSF in only one type of protocol in the family of active sham stimulation fo
 ![description](pics/blinding.png){#fig:results}
 
 
-# References
+# References {-}
 
 <!-- -->

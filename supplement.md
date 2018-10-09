@@ -40,6 +40,7 @@ affiliation:
   name: Danish Research Centre for Magnetic Resonance, Copenhagen University Hospital Hvidovre
 - number: 7
   name: Department of Electrical Engineering, Technical University of Denmark
+bibliography: references.bib   
 ...
 
 # Supplemental Analyses
@@ -47,16 +48,19 @@ affiliation:
 ## Technical details for Bayesian analyses
 
 All Bayesian analyses used four independent chains with 2000 samples each. We treated the first 1000 iterations as warm-up phase such that all inferences are based on 4000 iterations. We ensured that the Gelman-Rubin diagnostic [@gelman1992inference] $\hat{R}\le 1.05$ for all variables in all models. In addition, traceplots for all variables were visually inspected and no anomalies were found.
-
+ 
 ## Model-selection details
 
 We tested a sequence of models of increasing complexity independently for each of the two outcome measures (guessing sham vs. anodal stimulation and discomfort caused by stimulation).
-We started with a model that contains no factors (Null-model) and then added each of the factors (lab: AMS, GOE and TRM; stimulation-condition: sham vs. real) in various combinations. We also relaxed the assumption of homoskedasticity by testing models that allowed for unequal variances across labs and stimulation conditions. A summary of all models is given in Table \ref{tab:q6}. 
+We started with a model that contains no factors (Null-model) and then added each of the factors (lab: AMS, GOE and TRM; stimulation-condition: sham vs. real) in various combinations. We also relaxed the assumption of homoskedasticity by testing models that allowed for unequal variances across labs and stimulation conditions. A summary of all models  is provided in Table \ref{tab:q6} for the blinding question and  in Table \ref{tab:q3} for the discomfort question. For each model, we list the estimated effect of the anodal stimulation and the leave-one-out cross-validation criterion (LOOIC; @vehtari2017practical).
 
 \input{supp_tab_q6.tex}
+ 
+For both the blinding and discomfort question, model-selection favored a model that included both stimulation and lab as factors. Including their interaction decreased the model-selection score (blinding: $\Delta$LOOIC=-3.97, SE=1.77; discomfort: $\Delta$LOOIC=-2.42, SE=2.76). Allowing unequal variances across labs or stimulation did not appear to strongly improve model-fit. We therefore report the model that included both Stimulation and lab as factors in the main paper. However, the conclusions drawn from this model, in particular with respect to the effect of real vs. anodal stimulation on blinding efficacy and discomfort, were robust against model choice: All models (except model 4 that included the interaction term) showed a positive effect of real stimulation on both questions with the posterior 95% interval exlucing zero.
 
-You can find diagnostic plots as well as posterior-predictive checks for all tested models on our github-repository: https://github.com/ihrke/2018_tdcs_blinding/tree/master/analysis.
-
+\input{supp_tab_q3.tex}
+ 
+Diagnostic plots as well as posterior-predictive checks for all tested models can be found at our github-repository: <https://github.com/ihrke/2018_tdcs_blinding/tree/master/analysis>.
 
 ## Achieved impedance as a moderator
 
@@ -69,7 +73,7 @@ Even though we believe that our reported Bayesian analyses are much more suitabl
 
 
 
-# References
+# References {-}
 
 <!-- -->
 
