@@ -8,6 +8,5 @@
 *.log
 *.out
 *.spl
-*.tex
 *.html
 cache/*

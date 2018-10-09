@@ -15,7 +15,7 @@ author:
 - name: Josephine Groot
   footnote: 1,3
 - name: Guy E. Hawkins
-  footnote: 4
+  footnote: 4 
 - name: Birte Forstmann
   footnote: 3
 - name: Alexander Opitz
@@ -47,6 +47,16 @@ affiliation:
 ## Technical details for Bayesian analyses
 
 All Bayesian analyses used four independent chains with 2000 samples each. We treated the first 1000 iterations as warm-up phase such that all inferences are based on 4000 iterations. We ensured that the Gelman-Rubin diagnostic [@gelman1992inference] $\hat{R}\le 1.05$ for all variables in all models. In addition, traceplots for all variables were visually inspected and no anomalies were found.
+
+## Model-selection details
+
+We tested a sequence of models of increasing complexity independently for each of the two outcome measures (guessing sham vs. anodal stimulation and discomfort caused by stimulation).
+We started with a model that contains no factors (Null-model) and then added each of the factors (lab: AMS, GOE and TRM; stimulation-condition: sham vs. real) in various combinations. We also relaxed the assumption of homoskedasticity by testing models that allowed for unequal variances across labs and stimulation conditions. A summary of all models is given in Table \ref{tab:q6}. 
+
+\input{supp_tab_q6.tex}
+
+You can find diagnostic plots as well as posterior-predictive checks for all tested models on our github-repository: https://github.com/ihrke/2018_tdcs_blinding/tree/master/analysis.
+
 
 ## Achieved impedance as a moderator
 

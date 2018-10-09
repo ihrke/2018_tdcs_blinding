@@ -1,0 +1,35 @@
+\rowcolors{2}{gray!6}{white}
+\begin{table}
+
+\caption{\label{tab:}Summary of models for the blinding question.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright\arraybackslash}p{2cm}>{\centering}X>{\centering}X>{\raggedright\arraybackslash}p{2cm}>{\centering}X>{\centering\arraybackslash}p{1.5cm}}
+\hiderowcolors
+\toprule
+\multicolumn{2}{c}{ } & \multicolumn{3}{c}{Stimulation Effect} & \multicolumn{2}{c}{LOO} \\
+\cmidrule(l{3pt}r{3pt}){3-5} \cmidrule(l{3pt}r{3pt}){6-7}
+Model & Description & $b$\textsuperscript{a} & SE(b)\textsuperscript{b} & 95\% HDI\textsuperscript{c} & LOOIC\textsuperscript{d} & SE(LOO)\\
+\midrule
+\showrowcolors
+0 & Null & -- & -- & -- & 691.34 & 16.68\\
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textit{equal variances}}\\
+\hspace{1em}1 & Lab & -- & -- & -- & 689.81 & 16.55\\
+\hspace{1em}2 & Stim & 0.34 & 0.15 & $[0.04,0.64]$ & 688.54 & 17.17\\
+\hspace{1em}3 & Stim+Lab & 0.35 & 0.15 & $[0.07,0.63]$ & 686.13 & 16.91\\
+\hspace{1em}4 & Stim $\times$ Lab & 0.25 & 0.26 & $[-0.24,0.75]$ & 690.10 & 17.05\\
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textit{unequal variances lab}}\\
+\hspace{1em}5 & Stim+Lab & 0.35 & 0.15 & $[0.06,0.65]$ & 686.54 & 16.95\\
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textit{unequal variances stimulation}}\\
+\hspace{1em}6 & Stim+Lab & 0.35 & 0.14 & $[0.07,0.64]$ & 685.97 & 16.91\\
+\bottomrule
+\multicolumn{7}{l}{\textsuperscript{a} Effect of anodal stimulation on 7-point scale}\\
+\multicolumn{7}{l}{\textsuperscript{b} SE=standard error}\\
+\multicolumn{7}{l}{\textsuperscript{c} HDI=Highest Density Interval}\\
+\multicolumn{7}{l}{\textsuperscript{d} LOOIC=Leave-One-Out Information Criterion}\\
+\end{tabu}}
+\end{table}
+\rowcolors{2}{white}{white}

@@ -92,9 +92,16 @@ loo.1.q6 <- if.cached.load("loo.1.q6",
 
 ## anodal coefficient for all models
 map_df(mods, function(mod){
-  c(list(modname=toString(capture.output(mod$formula))), 
+  c(list(model=toString(capture.output(mod$formula))), 
     as.list(fixef(mod)["stim_settingC",]))
-  })
+  }) %>%
+  mutate(model=sprintf("`%s`",model)) -> coeff
+
+knitr::kable(coeff)
+
+coeff %>%
+  mutate(LOOIC=map_dbl(head(loo.1.q6,-1), function(obj) {obj$estimates[3,1]}),
+         `SE(LOOIC)`=map_dbl(head(loo.1.q6,-1), function(obj) {obj$estimates[3,2]}))
 
 as.data.frame(loo.1.q6$ic_diffs__) %>% rownames_to_column() %>% 
   mutate(z=LOOIC/SE)
