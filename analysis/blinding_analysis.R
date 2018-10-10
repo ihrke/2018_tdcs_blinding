@@ -340,4 +340,10 @@ ggsave("pics/impedance.png", width=6, height=2.5)
 library(BayesFactor)
 result=anovaBF(imp_start~stim_setting*lab_code,data=data.frame(qd) %>% mutate(stim_setting=as.factor(stim_setting), lab_code=as.factor(lab_code)))
 
+qd %>%
+  group_by(lab_code) %>%
+  summarise(mean(imp_start), sd(imp_start))
 
+qd %>%
+  group_by(stim_setting) %>%
+  summarise(mean(imp_start), sd(imp_start))
