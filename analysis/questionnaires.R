@@ -416,6 +416,24 @@ qd %>%
   ggplot(aes(stim_setting, imp_start,color=stim_setting))+geom_violin()+geom_jitter(width=0.1)+stat_summary(fun.data=mean_cl_boot)+facet_wrap(~lab_code)
 
 
+
+qd %>%
+  ggplot(aes(stim_setting, imp_start,color=stim_setting))+
+  geom_boxplot()+
+  geom_jitter(width=0.1)+
+  stat_summary(fun.data=mean_cl_boot, color="black")+
+  facet_wrap(~lab_code)
+
+library(BayesFactor)
+result=anovaBF(imp_start~stim_setting*lab_code,data=data.frame(qd) %>% mutate(stim_setting=as.factor(stim_setting), lab_code=as.factor(lab_code)))
+
+write.table(qd, file="analysis/questionnaire_data.csv", row.names = F, sep=",")
+
+mod=brm(imp_start~stim_setting*lab_code, data=qd)
+summary(mod)
+marginal_effects(mod)
+plot(mod)
+
 qd %>%
   ggplot(aes( q3, imp_start, color=stim_setting))+geom_jitter(width=0.1)+geom_smooth(method="lm")
 

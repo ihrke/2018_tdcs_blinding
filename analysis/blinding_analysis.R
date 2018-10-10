@@ -94,13 +94,21 @@ models.q6 <- list(
   formula(q6~1),
   formula(q6~1+lab_code),
   formula(q6~1+stim_setting),
+  formula(q6~1+imp_start),
   formula(q6~1+stim_setting+lab_code),
-  formula(q6~1+stim_setting*lab_code),
+  formula(q6~1+stim_setting+imp_start),
+  formula(q6~1+lab_code+imp_start),
+  formula(q6~1+lab_code+stim_setting+imp_start),
+  formula(q6~1+stim_setting*lab_code+imp_start),
+  formula(q6~1+stim_setting*lab_code*imp_start),
   formula(bf(q6~1+stim_setting+lab_code)+
             lf(disc ~ 0+lab_code, cmc=F)),
   formula(bf(q6~1+stim_setting+lab_code)+
             lf(disc ~ 0+stim_setting, cmc=F))
 )
+
+description=c("Null", "Lab", "Stim(ulation)", "Imp(edance)", "Stim+Lab", "Stim+Imp", "Lab+Imp", "Lab+Stim+Imp", "Stim$\\times$Lab+Imp", "Stim$\\times$Lab$\\times$Imp",  "Stim+Lab", "Stim+Lab")
+
 names(models.q6) <- sprintf("mod%02i.q6", 0:(length(models.q6)-1))
 #========================
 ## fit models
@@ -158,8 +166,6 @@ library(kableExtra)
 viewer <- getOption("viewer")
 options(knitr.kable.NA = '--')
 
-description=c("Null", "Lab", "Stim", "Stim+Lab", "Stim $\\times$ Lab", "Stim+Lab", "Stim+Lab")
-
 coeff.tab %>%
   mutate(HDI=if_else(is.na(Estimate), "--", sprintf("$[%.2f,%.2f]$", `Q2.5`, `Q97.5`))) %>%
   mutate(model=0:(n()-1), description=description) %>%
@@ -177,13 +183,13 @@ names(tab)[5]=paste0("95\\% HDI", footnote_marker_alphabet(3, "latex"))
 names(tab)[6]<- paste0(names(tab)[6], footnote_marker_alphabet(4, "latex"))
 tab%>%
   knitr::kable(digits = 2, escape = F, format = "latex", align=c("l", "l", "c", "c", "l", "c", "c"), booktabs=T, caption = "\\label{tab:q6}Summary of models for the blinding question.") %>%
-  kable_styling(full_width = T, latex_options=c("striped", "scale_down"), position="center")  %>%
-  column_spec(2,width="2cm") %>%
+  kable_styling(font_size = 9, full_width = T, latex_options=c("striped", "scale_down"), position="center")  %>%
+  column_spec(2,width="2.5cm") %>%
   column_spec(5,width="2cm") %>%
   column_spec(7,width="1.5cm") %>%
-  group_rows("equal variances", 2,5, bold = F, italic = T) %>%
-  group_rows("unequal variances lab", 6,6, bold=F, italic=T) %>%
-  group_rows("unequal variances stimulation", 7,7, bold=F, italic=T) %>%
+  group_rows("equal variances", 2,10, bold = F, italic = T) %>%
+  group_rows("unequal variances lab", 11,11, bold=F, italic=T) %>%
+  group_rows("unequal variances stimulation", 12,12, bold=F, italic=T) %>%
   add_header_above(c(" " = 2, "Stimulation Effect" = 3, "LOO" = 2)) %>%
   footnote(alphabet=c("Effect of anodal stimulation on 7-point scale",
                     "SE=standard error",
@@ -194,7 +200,6 @@ write(tab.tex, file="supp_tab_q6.tex")
 
 #tab.tex%>%
 #  kable_as_image(file_format = "pdf", keep_tex = F) %>% viewer 
-
 
 #==========================================================================================
 ## Question 3 (blinding)
@@ -208,13 +213,21 @@ models.q3 <- list(
   formula(q3~1),
   formula(q3~1+lab_code),
   formula(q3~1+stim_setting),
+  formula(q3~1+imp_start),
   formula(q3~1+stim_setting+lab_code),
-  formula(q3~1+stim_setting*lab_code),
+  formula(q3~1+stim_setting+imp_start),
+  formula(q3~1+lab_code+imp_start),
+  formula(q3~1+lab_code+stim_setting+imp_start),
+  formula(q3~1+stim_setting*lab_code+imp_start),
+  formula(q3~1+stim_setting*lab_code*imp_start),
   formula(bf(q3~1+stim_setting+lab_code)+
             lf(disc ~ 0+lab_code, cmc=F)),
   formula(bf(q3~1+stim_setting+lab_code)+
             lf(disc ~ 0+stim_setting, cmc=F))
 )
+
+description=c("Null", "Lab", "Stim(ulation)", "Imp(edance)", "Stim+Lab", "Stim+Imp", "Lab+Imp", "Lab+Stim+Imp", "Stim$\\times$Lab+Imp", "Stim$\\times$Lab$\\times$Imp",  "Stim+Lab", "Stim+Lab")
+
 names(models.q3) <- sprintf("mod%02i.q3", 0:(length(models.q3)-1))
 #========================
 ## fit models
@@ -272,8 +285,6 @@ library(kableExtra)
 viewer <- getOption("viewer")
 options(knitr.kable.NA = '--')
 
-description=c("Null", "Lab", "Stim", "Stim+Lab", "Stim $\\times$ Lab", "Stim+Lab", "Stim+Lab")
-
 coeff.tab %>%
   mutate(HDI=if_else(is.na(Estimate), "--", sprintf("$[%.2f,%.2f]$", `Q2.5`, `Q97.5`))) %>%
   mutate(model=0:(n()-1), description=description) %>%
@@ -291,20 +302,42 @@ names(tab)[5]=paste0("95\\% HDI", footnote_marker_alphabet(3, "latex"))
 names(tab)[6]<- paste0(names(tab)[6], footnote_marker_alphabet(4, "latex"))
 tab%>%
   knitr::kable(digits = 2, escape = F, format = "latex", align=c("l", "l", "c", "c", "l", "c", "c"), booktabs=T, caption = "\\label{tab:q3}Summary of models for the discomfort question.") %>%
-  kable_styling(full_width = T, latex_options=c("striped", "scale_down"), position="center")  %>%
-  column_spec(2,width="2cm") %>%
+  kable_styling(font_size = 9, full_width = T, latex_options=c("striped", "scale_down"), position="center")  %>%
+  column_spec(2,width="2.5cm") %>%
   column_spec(5,width="2cm") %>%
   column_spec(7,width="1.5cm") %>%
-  group_rows("equal variances", 2,5, bold = F, italic = T) %>%
-  group_rows("unequal variances lab", 6,6, bold=F, italic=T) %>%
-  group_rows("unequal variances stimulation", 7,7, bold=F, italic=T) %>%
+  group_rows("equal variances", 2,10, bold = F, italic = T) %>%
+  group_rows("unequal variances lab", 11,11, bold=F, italic=T) %>%
+  group_rows("unequal variances stimulation", 12,12, bold=F, italic=T) %>%
   add_header_above(c(" " = 2, "Stimulation Effect" = 3, "LOO" = 2)) %>%
   footnote(alphabet=c("Effect of anodal stimulation on 7-point scale",
                       "SE=standard error",
                       "HDI=Highest Density Interval",
                       "LOOIC=Leave-One-Out Information Criterion")) -> tab.tex
 
+
 write(tab.tex, file="supp_tab_q3.tex")
 
-#tab.tex%>%
-#  kable_as_image(file_format = "pdf", keep_tex = F) %>% viewer 
+tab.tex%>%
+  kable_as_image(file_format = "pdf", keep_tex = F) %>% viewer 
+
+
+#==========================================================================================
+## IMPEDANCE changes
+#==========================================================================================
+
+qd %>% 
+  mutate(stimulation=case_when( stim_setting=="B" ~ "sham",
+                                stim_setting=="C" ~ "anodal")) %>%
+  ggplot(aes(stimulation, imp_start,color=stimulation))+
+  geom_boxplot()+
+  geom_jitter(width=0.1)+
+  stat_summary(fun.data=mean_cl_boot, color="black")+
+  facet_wrap(~lab_code)+guides(color=F)+
+  labs(x="Stimulation", y="Impedance")
+ggsave("pics/impedance.png", width=6, height=2.5)
+
+library(BayesFactor)
+result=anovaBF(imp_start~stim_setting*lab_code,data=data.frame(qd) %>% mutate(stim_setting=as.factor(stim_setting), lab_code=as.factor(lab_code)))
+
+
