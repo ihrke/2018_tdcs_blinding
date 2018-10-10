@@ -92,9 +92,16 @@ loo.1.q6 <- if.cached.load("loo.1.q6",
 
 ## anodal coefficient for all models
 map_df(mods, function(mod){
-  c(list(modname=toString(capture.output(mod$formula))), 
+  c(list(model=toString(capture.output(mod$formula))), 
     as.list(fixef(mod)["stim_settingC",]))
-  })
+  }) %>%
+  mutate(model=sprintf("`%s`",model)) -> coeff
+
+knitr::kable(coeff)
+
+coeff %>%
+  mutate(LOOIC=map_dbl(head(loo.1.q6,-1), function(obj) {obj$estimates[3,1]}),
+         `SE(LOOIC)`=map_dbl(head(loo.1.q6,-1), function(obj) {obj$estimates[3,2]}))
 
 as.data.frame(loo.1.q6$ic_diffs__) %>% rownames_to_column() %>% 
   mutate(z=LOOIC/SE)
@@ -408,6 +415,24 @@ t.test(imp_start ~ stim_setting, data=qd)
 qd %>%
   ggplot(aes(stim_setting, imp_start,color=stim_setting))+geom_violin()+geom_jitter(width=0.1)+stat_summary(fun.data=mean_cl_boot)+facet_wrap(~lab_code)
 
+
+
+qd %>%
+  ggplot(aes(stim_setting, imp_start,color=stim_setting))+
+  geom_boxplot()+
+  geom_jitter(width=0.1)+
+  stat_summary(fun.data=mean_cl_boot, color="black")+
+  facet_wrap(~lab_code)
+
+library(BayesFactor)
+result=anovaBF(imp_start~stim_setting*lab_code,data=data.frame(qd) %>% mutate(stim_setting=as.factor(stim_setting), lab_code=as.factor(lab_code)))
+
+write.table(qd, file="analysis/questionnaire_data.csv", row.names = F, sep=",")
+
+mod=brm(imp_start~stim_setting*lab_code, data=qd)
+summary(mod)
+marginal_effects(mod)
+plot(mod)
 
 qd %>%
   ggplot(aes( q3, imp_start, color=stim_setting))+geom_jitter(width=0.1)+geom_smooth(method="lm")
