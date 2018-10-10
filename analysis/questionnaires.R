@@ -496,8 +496,12 @@ qd %>%
 d3 %>%
   group_by(q, stim_setting) %>%
   summarise(less=sum(n[level<4]),
-            more=sum(n[level>4]), more/less)
+            more=sum(n[level>4]), more/less, mean(level))
 
+qd %>% group_by(stim_setting) %>%
+  summarize(mean(q3))
+mean(qd$q3)
+sd(qd$q3)
 d3 %>%
   ggplot(aes(level,n,fill=stim_setting))+geom_bar(stat="identity", position = position_dodge())+facet_grid(q~.)
  
