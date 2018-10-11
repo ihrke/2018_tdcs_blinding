@@ -68,12 +68,15 @@ Given the enormous popularity of this sham procedure, we set out to investigate 
 
 # Material and methods
 
+The study followed a fully pre-registered protocol (<https://osf.io/bv32d/>) with a sequential sampling plan. Details are available in the original report [@boayue2018registered].
+
 ## Participants 
-The dataset contains sujbective reports of 192 healthy participants (134 female, mean age: 22.2 yrs $\pm$ 3.19 yrs SD)  collected at the University of Amsterdam, University of Göttingen and University of Tromsø [@boayue2018registered]. The raw data are available here (\textcolor{red}{todo: link}). Participants had no previous experience with tDCS. The study was approved by the local ethic committee and was performed according to the Declaration of Helsinki. All participants provided written informed consent before participation. 
+
+The dataset contains subjective reports of 192 healthy participants (134 female, mean age: 22.2 yrs $\pm$ 3.19 yrs SD)  collected at the University of Amsterdam, University of Göttingen and University of Tromsø [@boayue2018registered]. The raw data and all reported analyses are available at our repository <https://github.com/ihrke/2018_tdcs_blinding>. Participants had no previous experience with tDCS. The study was approved by the local ethic committee and was performed according to the Declaration of Helsinki. All participants provided written informed consent before participation. 
 
 ## Stimulation protocols
 
-The stimulation was administered by a neuroConn DC-stimulator in a double-blind fashion. The details of the real and the FSF protocols can be seen in Figure @fig:results A.  
+The stimulation was administered by a neuroConn DC-stimulator in a double-blind fashion. The details of the real and the FSF protocols can be seen in Figure @fig:results A.
 
 ## Assessing the stimulation discomfort and the blinding efficacy
 
@@ -93,7 +96,7 @@ TDCS applied at 1 mA for 20 min is a frequently used protocol in the literature 
 
 
 
-![Graphical description of the results. (A) Responses to the blinding question were generally more correct in the real-stimulation condition (red) when compared to sham (grey). (B) Participants receiving real stimulation reported more discomfort.](pics/figure1.png){#fig:results}
+![Graphical description of the results. (A) Responses to the blinding question were generally more correct in the real-stimulation condition (red) when compared to sham (grey). (B) Participants receiving real stimulation reported more discomfort.](pics/figure1.png){ #fig:results width=100% }
 
 
 # References {-}
