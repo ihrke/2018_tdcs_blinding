@@ -45,7 +45,10 @@ bibliography: references.bib
 
 # Supplemental Analyses
 
-## Technical details for Bayesian analyses
+## Analysis methods -- details
+
+It has recently pointed out that treating ordinal variables, such as responses to Likert-scales, as metric can have a strong impact on the validity of the statistical analyses: It can distort effect-size estimates, inflate error rates and cause other problems [@liddell2018analyzing,@buerkner_vuorre_2018]. Despite these severe problems, treating ordinal variables as metric is extremely common in psychology and related disciplines [@liddell2018analyzing]. A more appropriate approach uses specific ordinal models such as ordinal probit regression [@buerkner_vuorre_2018]. Here we use a Bayesian approach to estimate such a model as implemented in the R-package `brms` [@buerkner_2018_brms]. We report our results in terms of posterior mean parameters along with the 95% highest-density interval (HDI) calculated from posterior distribution. This measure quantifies the interval in which the true parameter is located with 95% probability given the applied model. We conclude that a parameter is different from zero if the 95% interval excludes zero. We used the default priors implemented in the `brms`-package [@buerkner_2018_brms]. Those include uniform priors for all regression coefficients and a Students' t-prior centered at zero with df=3 and sd=10 for the thresholds.
+In addition, we use Bayesian methods for model selection based on the leave-one-out crossvalidation procedure (LOO; @vehtari2017practical). 
 
 All Bayesian analyses used four independent chains with 2000 samples each. We treated the first 1000 iterations as warm-up phase such that all inferences are based on 4000 iterations. We ensured that the Gelman-Rubin diagnostic [@gelman1992inference] $\hat{R}\le 1.05$ for all variables in all models. In addition, traceplots for all variables were visually inspected and no anomalies were found.
   
