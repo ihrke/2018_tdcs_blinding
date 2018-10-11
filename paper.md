@@ -60,9 +60,11 @@ additionalinformation: |
 
 # Introduction
 
-Transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation method, which applies low-intensity (1-2 mA) constant current between two or more electrodes placed over the scalp [@antal2017low]. At these intenisties, tDCS induces moderate amount of adverse-effects that include cutaneous discomfort, such as itching or tingling sensations [@poreisz2007safety; @matsumoto2017adverse; @fertonani2015you].
+Transcranial direct current stimulation (tDCS) is a safe, non-invasive brain stimulation method, which applies low-intensity (1-2 mA) constant current between two or more electrodes placed over the scalp [@antal2017low]. TDCS is assumed to modulate cortical excitability depending on the used polarity of the stimulation and is used to study cognitive functions in humans. At low intensities, tDCS induces a moderate amount of adverse effects that include cutaneous discomfort such as itching or tingling sensations [@poreisz2007safety; @matsumoto2017adverse; @fertonani2015you].
 
-Most tDCS studies use active sham stimulation protocols for placebo control [@davis2013challenges]. The aim of the active sham stimulation is to induce adverse-effects that are reminiscent of the real tDCS protocol without inducing the neurophysiologically relevant primary effects and after-effects [@woods2016technical]. The most frequently applied active sham stimulation is the so called 'fade-in, short-stimulation, fade-out' (FSF) protocol [@ambrus2012fade]. The blinding efficacy of the FSF protocol depends on the intensity and duration of the real tDCS protocol: Evidence suggest that it is already compromised when tDCS is applied at 1.5 or 2 mA for 10 min or longer [@kessler2012differences; @o2012rethinking; @russo2013perception; @wallace2016perceived].
+Most tDCS studies use active sham stimulation protocols for placebo control [@davis2013challenges]. The aim of the active sham stimulation is to induce adverse-effects that are reminiscent of the real tDCS protocol without inducing the neurophysiologically relevant primary effects of the stimulation [@woods2016technical]. The most frequently applied active sham stimulation is the so called 'fade-in, short-stimulation, fade-out' (FSF) protocol [@ambrus2012fade]. The blinding efficacy of the FSF protocol depends on the intensity and duration of the real tDCS protocol: While it is commonly assumed that FSF can maintain blinding at 1 mA applied for 20 minutes [@gandiga2006transcranial], evidence suggests that blinding is compromised when tDCS is applied at 1.5 or 2 mA for 10 min or longer [@kessler2012differences; @o2012rethinking; @russo2013perception; @wallace2016perceived]. Therefore, FSF has been used in hundreds of studies comparing 
+
+
 
 Based on the literature, one may expect that FSF can effectively blind real tDCS applied at 1 mA for 20 min [@gandiga2006transcranial]. Given that large number of studies use this protocol, we retrospectively analyzed the subjective reports of 192 volunteers, who either received real tDCS (n=96) or FSF tDCS (n=96). We used a publicly available dataset from a pre-registered multi-center double-blind parallel group study, which investigated the behavioral effects of anodal tDCS over the dorsolateral prefrontal cortex on mind-wandering [@boayue2018registered]. Our findings challenge the present notion about the blinding efficacy of the FSF for this protocol among young healthy adults.
 
@@ -94,7 +96,7 @@ TDCS applied at 1 mA for 20 min is a frequently used protocol in the literature 
 
 
 
-![Graphical description of the results. (A) Responses to the blinding question were generally more correct in the real-stimulation condition (red) when compared to sham (grey). (B) Participants receiving real stimulation reported more discomfort.](pics/blinding.png){#fig:results}
+![Graphical description of the results. (A) Responses to the blinding question were generally more correct in the real-stimulation condition (red) when compared to sham (grey). (B) Participants receiving real stimulation reported more discomfort.](pics/figure1.png){#fig:results}
 
 
 # References {-}
