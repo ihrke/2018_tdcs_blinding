@@ -222,11 +222,15 @@ models.q3 <- list(
   formula(q3~1+stim_setting*lab_code*imp_start),
   formula(bf(q3~1+stim_setting+lab_code)+
             lf(disc ~ 0+lab_code, cmc=F)),
+  formula(bf(q3~1+stim_setting+lab_code+imp_start)+
+            lf(disc ~ 0+lab_code, cmc=F)),
   formula(bf(q3~1+stim_setting+lab_code)+
+            lf(disc ~ 0+stim_setting, cmc=F)),
+  formula(bf(q3~1+stim_setting+lab_code+imp_start)+
             lf(disc ~ 0+stim_setting, cmc=F))
 )
 
-description=c("Null", "Lab", "Stim(ulation)", "Imp(edance)", "Stim+Lab", "Stim+Imp", "Lab+Imp", "Lab+Stim+Imp", "Stim$\\times$Lab+Imp", "Stim$\\times$Lab$\\times$Imp",  "Stim+Lab", "Stim+Lab")
+description=c("Null", "Lab", "Stim(ulation)", "Imp(edance)", "Stim+Lab", "Stim+Imp", "Lab+Imp", "Lab+Stim+Imp", "Stim$\\times$Lab+Imp", "Stim$\\times$Lab$\\times$Imp",  "Stim+Lab","Stim+Lab+Imp",  "Stim+Lab","Stim+Lab+Imp")
 
 names(models.q3) <- sprintf("mod%02i.q3", 0:(length(models.q3)-1))
 #========================
@@ -307,8 +311,8 @@ tab%>%
   column_spec(5,width="2cm") %>%
   column_spec(7,width="1.5cm") %>%
   group_rows("equal variances", 2,10, bold = F, italic = T) %>%
-  group_rows("unequal variances lab", 11,11, bold=F, italic=T) %>%
-  group_rows("unequal variances stimulation", 12,12, bold=F, italic=T) %>%
+  group_rows("unequal variances lab", 11,12, bold=F, italic=T) %>%
+  group_rows("unequal variances stimulation", 13,14, bold=F, italic=T) %>%
   add_header_above(c(" " = 2, "Stimulation Effect" = 3, "LOO" = 2)) %>%
   footnote(alphabet=c("Effect of anodal stimulation on 7-point scale",
                       "SE=standard error",
