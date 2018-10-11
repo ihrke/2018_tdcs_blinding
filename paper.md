@@ -1,5 +1,5 @@
 ---
-title:  'Compromised Effective Blinding for transcranial direct current stimulation at 1 mA for 20 min in Young Healthy Individuals'
+title:  'Blinding is compromised for transcranial direct current stimulation at 1 mA for 20 min in Young Healthy Individuals'
 journal: 'Brain Stimulation'
 author:
 - name: Zsolt Turi
