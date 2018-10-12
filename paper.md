@@ -3,17 +3,17 @@ title:  'Blinding is compromised for transcranial direct current stimulation at 
 journal: 'Brain Stimulation'
 author:
 - name: Zsolt Turi
-  footnote: 2
+  footnote: 1
 - name: Gábor Csifcsák
-  footnote: 1
-- name: Nya Mehnwolo Boayue
-  footnote: 1
-- name: Per Aslaksen
-  footnote: 1
-- name: Andrea Antal
   footnote: 2
+- name: Nya Mehnwolo Boayue
+  footnote: 2
+- name: Per Aslaksen
+  footnote: 2
+- name: Andrea Antal
+  footnote: 1
 - name: Josephine Groot
-  footnote: 1,3
+  footnote: 2,3
 - name: Guy E. Hawkins
   footnote: 4
 - name: Birte Forstmann
@@ -23,13 +23,13 @@ author:
 - name: Axel Thielscher
   footnote: 6,7
 - name: Matthias Mittner
-  footnote: 1
+  footnote: 2
   corresponding: matthias.mittner@uit.no
 affiliation:
 - number: 1
-  name: Department of Psychology, University of Tromsø
-- number: 2
   name: Department of Clinical Neurophysiology, University Medical Center Göttingen
+- number: 2
+  name: Department of Psychology, University of Tromsø 
 - number: 3
   name: Integrative Model-based Cognitive Neuroscience Research Unit, University of Amsterdam
 - number: 4
