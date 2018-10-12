@@ -72,11 +72,11 @@ The study followed a fully pre-registered protocol (<https://osf.io/bv32d/>) wit
 
 ## Participants 
 
-The dataset contains subjective reports of 192 healthy participants (134 female, mean age: 22.2 yrs $\pm$ 3.19 yrs SD)  collected at the University of Amsterdam, University of Göttingen and University of Tromsø [@boayue2018registered]. The raw data and all reported analyses are available at our repository <https://github.com/ihrke/2018_tdcs_blinding>. Participants had no previous experience with tDCS. The study was approved by the local ethic committee and was performed according to the Declaration of Helsinki. All participants provided written informed consent before participation. 
+The dataset contains subjective reports of 192 healthy participants (134 female, mean age: 22.2 yrs $\pm$ 3.19 yrs SD)  collected at three labs: Amsterdam, Göttingen and Tromsø [@boayue2018registered]. The raw data and all reported analyses are available at our repository <https://github.com/ihrke/2018_tdcs_blinding>. Participants had no previous experience with tDCS. The study was approved by the local ethic committee and was performed according to the Declaration of Helsinki. All participants provided written informed consent before participation. 
 
 ## Stimulation protocols
 
-The stimulation was administered using a neuroConn DC-stimulator in a double-blind fashion. The details of the real and the FSF protocols are summarized in Figure @fig:results A and B.
+The stimulation was administered using a neuroConn DC-stimulator in a double-blind fashion (see Supplemental Material). The details of the real and the FSF protocols are summarized in Figure @fig:results A and B.
 
 ## Assessing the stimulation discomfort and the blinding efficacy
 
@@ -84,7 +84,7 @@ A 7-point Likert-scale was used to assess the amount of discomfort and the blind
 
 ## Analysis method
 
-We used Bayesian estimation of ordinal probit regression-models [@buerkner_vuorre_2018] designed specifically for analysing ordinal data [@liddell2018analyzing]. We report our results in terms of posterior mean parameters along with the 95% highest-density interval (HDI) calculated from the posterior distribution. For more details, see Supplementary Material.
+We used Bayesian estimation of ordinal probit regression-models [@buerkner_vuorre_2018] designed specifically for analysing ordinal data [@liddell2018analyzing]. We report our results in terms of posterior mean parameters along with the 95% highest-density interval (HDI) calculated from the posterior distribution. For more details, see Supplemental Analysis.
 
 # Results and Discussion
 
