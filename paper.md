@@ -11,17 +11,17 @@ author:
 - name: Per Aslaksen
   footnote: 2
 - name: Andrea Antal
-  footnote: 1
+  footnote: 1,3
 - name: Josephine Groot
-  footnote: 2,3
+  footnote: 2,4
 - name: Guy E. Hawkins
-  footnote: 4
-- name: Birte Forstmann
-  footnote: 3
-- name: Alexander Opitz
   footnote: 5
+- name: Birte Forstmann
+  footnote: 4
+- name: Alexander Opitz
+  footnote: 6
 - name: Axel Thielscher
-  footnote: 6,7
+  footnote: 7,8
 - name: Matthias Mittner
   footnote: 2
   corresponding: matthias.mittner@uit.no
@@ -31,14 +31,16 @@ affiliation:
 - number: 2
   name: Department of Psychology, University of Tromsø 
 - number: 3
-  name: Integrative Model-based Cognitive Neuroscience Research Unit, University of Amsterdam
+  name: Medical Psychology, Otto-Guericke University Magdeburg
 - number: 4
-  name: School of Psychology, University of Newcastle
+  name: Integrative Model-based Cognitive Neuroscience Research Unit, University of Amsterdam
 - number: 5
-  name: Department of Biomedical Engineering, University of Minnesota
+  name: School of Psychology, University of Newcastle
 - number: 6
-  name: Danish Research Centre for Magnetic Resonance, Copenhagen University Hospital Hvidovre
+  name: Department of Biomedical Engineering, University of Minnesota
 - number: 7
+  name: Danish Research Centre for Magnetic Resonance, Copenhagen University Hospital Hvidovre
+- number: 8
   name: Department of Electrical Engineering, Technical University of Denmark
 keyword:
   - tDCS
@@ -60,9 +62,9 @@ additionalinformation: |
 
 # Introduction
 
-Transcranial direct current stimulation (tDCS) is a safe, non-invasive brain stimulation method, which applies low-intensity (1-2 mA) constant current between two or more electrodes placed over the scalp [@antal2017low]. TDCS is assumed to modulate cortical excitability depending on the used polarity of the stimulation and is used to study cognitive functions in humans [@santarnecchi2015enhancing]. At low intensities, tDCS induces a moderate amount of adverse effects that include cutaneous discomfort such as itching or tingling sensations [@poreisz2007safety; @matsumoto2017adverse; @fertonani2015you].
+Transcranial direct current stimulation (tDCS) is a safe, non-invasive brain stimulation method, which applies low-intensity (most frequenty 1-2 mA) constant current between two or more electrodes placed over the scalp [@antal2017low]. TDCS is assumed to modulate cortical excitability depending on the used polarity of the stimulation and is used to study cognitive functions in humans [@santarnecchi2015enhancing]. At low intensities, tDCS induces a moderate amount of perceptual adverse-effects that include cutaneous discomfort such as itching or tingling sensations [@poreisz2007safety; @matsumoto2017adverse; @fertonani2015you].
 
-Most tDCS studies use active sham stimulation protocols for placebo control [@davis2013challenges]. The aim of the active sham stimulation is to induce adverse-effects that are reminiscent of the real tDCS protocol without inducing the neurophysiologically relevant primary effects of the stimulation [@woods2016technical]. The most frequently applied active sham stimulation is the so called 'fade-in, short-stimulation, fade-out' (FSF) protocol [@ambrus2012fade]. The blinding efficacy of the FSF protocol depends on the intensity and duration of the real tDCS protocol: While it is commonly assumed that FSF can maintain blinding at 1 mA applied for 20 minutes [@gandiga2006transcranial], evidence suggests that blinding is compromised when tDCS is applied at 1.5 or 2 mA for 10 min or longer [@kessler2012differences; @o2012rethinking; @russo2013perception; @wallace2016perceived]. Following these findings, FSF has been used as a control in hundreds of studies using real tDCS at 1 mA for 20 minutes.
+Most tDCS studies use active sham stimulation protocols for placebo control [@davis2013challenges]. The aim of the active sham stimulation is to induce cutaneous adverse-effects that are reminiscent of the real tDCS protocol without inducing the neurophysiologically relevant primary effects of the stimulation [@woods2016technical]. The most frequently applied active sham stimulation is the so called 'fade-in, short-stimulation, fade-out' (FSF) protocol [@ambrus2012fade]. The blinding efficacy of the FSF protocol depends on the intensity and duration of the real tDCS protocol: While it is commonly assumed that FSF can maintain blinding at 1 mA applied for 20 minutes [@gandiga2006transcranial], evidence suggests that blinding is compromised when tDCS is applied at 1.5 or 2 mA for 10 min or longer [@kessler2012differences; @o2012rethinking; @russo2013perception; @wallace2016perceived]. Following these findings, FSF has been used as a control in hundreds of studies using real tDCS at 1 mA for 20 minutes.
 
 Given the enormous popularity of this sham procedure [@bikson2017rigor], we set out to investigate its blinding efficacy using data from our recent high-powered, multi-center, pre-registered study [@boayue2018registered]. In this study, we collected data from 192 volunteers, who either received real tDCS at 1 mA for 20 minutes over the left dorsolateral prefrontal cortex (DLPFC) or FSF tDCS. The primary goal was to investigate the behavioral effects of anodal tDCS over the left DLPFC on mind-wandering but we also collected subjective reports concerning blinding efficacy and cutaneous discomfort. Here, we report analyses on these reports in order to investigate whether FSF is an effective control procedure for tDCS applied at 1 mA over 20 minutes.
 

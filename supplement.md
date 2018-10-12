@@ -11,34 +11,36 @@ author:
 - name: Per Aslaksen
   footnote: 2
 - name: Andrea Antal
-  footnote: 1
+  footnote: 1,3
 - name: Josephine Groot
-  footnote: 2,3
+  footnote: 2,4
 - name: Guy E. Hawkins
-  footnote: 4 
-- name: Birte Forstmann
-  footnote: 3
-- name: Alexander Opitz
   footnote: 5
+- name: Birte Forstmann
+  footnote: 4
+- name: Alexander Opitz
+  footnote: 6
 - name: Axel Thielscher
-  footnote: 6,7
+  footnote: 7,8
 - name: Matthias Mittner
   footnote: 2
   corresponding: matthias.mittner@uit.no
 affiliation:
 - number: 1
-  name: Department of Clinical Neurophysiology, University Medical Center Göttingen 
+  name: Department of Clinical Neurophysiology, University Medical Center Göttingen
 - number: 2
-  name: Department of Psychology, University of Tromsø
+  name: Department of Psychology, University of Tromsø 
 - number: 3
-  name: Integrative Model-based Cognitive Neuroscience Research Unit, University of Amsterdam
+  name: Medical Psychology, Otto-Guericke University Magdeburg
 - number: 4
-  name: School of Psychology, University of Newcastle
+  name: Integrative Model-based Cognitive Neuroscience Research Unit, University of Amsterdam
 - number: 5
-  name: Department of Biomedical Engineering, University of Minnesota
+  name: School of Psychology, University of Newcastle
 - number: 6
-  name: Danish Research Centre for Magnetic Resonance, Copenhagen University Hospital Hvidovre
+  name: Department of Biomedical Engineering, University of Minnesota
 - number: 7
+  name: Danish Research Centre for Magnetic Resonance, Copenhagen University Hospital Hvidovre
+- number: 8
   name: Department of Electrical Engineering, Technical University of Denmark
 bibliography: references.bib   
 ...
