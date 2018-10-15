@@ -41,7 +41,7 @@ affiliation:
 - number: 7
   name: Danish Research Centre for Magnetic Resonance, Copenhagen University Hospital Hvidovre
 - number: 8
-  name: Department of Electrical Engineering, Technical University of Denmark
+  name: Danish Research Centre for Magnetic Resonance, Centre for Functional and Diagnostic Imaging and Research, Copenhagen University Hospital Hvidovre, Denmark
 keyword:
   - tDCS
   - blinding
@@ -54,7 +54,7 @@ abstract: |
 linenumbers: true
 bibliography: references.bib 
 acknowledgements: |
-  We'd like to thank bla bla and blablab. Not to forget blubberdiblub!
+  AT received support from Lundbeckfonden (R118-A11308) and Novo Nordisk Fonden by a synergy grant on Biophysically adjusted state-informed cortex stimulation (BASICS; NNF14OC0011413).
 contribution: | 
   Must include all authors, identified by initials, for example:
   A.A. conceived the experiment(s),  A.A. and B.A. conducted the experiment(s), C.A. and D.A. analysed the results.  All authors reviewed the manuscript.
