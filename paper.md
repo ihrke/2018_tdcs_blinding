@@ -12,6 +12,8 @@ author:
   footnote: 2
 - name: Andrea Antal
   footnote: 1,3
+- name: Walter Paulus
+  footnote: 1
 - name: Josephine Groot
   footnote: 2,4
 - name: Guy E. Hawkins
@@ -27,7 +29,7 @@ author:
   corresponding: matthias.mittner@uit.no
 affiliation:
 - number: 1
-  name: Department of Clinical Neurophysiology, University Medical Center Göttingen
+  name: Department of Clinical Neurophysiology, University Medical Center Goettingen
 - number: 2
   name: Department of Psychology, University of Tromsø 
 - number: 3
@@ -99,7 +101,7 @@ Our results are summarized graphically in Figure @fig:results C and @fig:results
 
 The findings for the discomfort question were similar. In general, all subjects reported relatively low discomfort ($M=2.5$, SD=$1.56$). In a parallel model to that for the blinding question, real stimulation had a positive effect ($b=0.34$ $[0.04, 0.63]$) though that effect was slightly less robust to model-specification than the effect on the blinding question (see Supplemental Analyses). 
 
-TDCS applied at 1 mA for 20 minutes is one of the most frequently used protocols in the literature and it is commonly assumed to be effectively blinded by the FSF protocol [@gandiga2006transcranial]. Our data, implementing the brain stimulation with the highest sample size investigating this issue to date, challenge this assumption: We found that our subjects could, to a degree, distinguish between active and sham conditions. It is important to note that this effect was present despite the fact that 1) none of the participants had any prior experience with tDCS and 2) every participant took part in only one condition so that they did not have a reference frame to which to compare their experience. It is likely that the actual distinguishability can be much stronger in many studies using repeated measures and/or participants with prior exposure to tDCS [@o2012rethinking]. Given that tDCS is a potent placebo-inducing procedure both in the clinical  [@aslaksen2014effect] and cognitive domain [@turi2017placebo; @turi2018cogplac], there seems to be an urgent need to develop better active sham protocols to effectively maintain blinding, eg., by using 20 minutes of low-intensity (0.1-0.2 mA) pulsating (400-550 ms) active sham tDCS protocols [@palm2013evaluation].
+TDCS applied at 1 mA for 20 minutes is one of the most frequently used protocols in the literature and it is commonly assumed to be effectively blinded by the FSF protocol [@gandiga2006transcranial]. Our data, implementing the brain stimulation with the highest sample size investigating this issue to date, challenge this assumption: We found that our subjects could, to a degree, distinguish between active and sham conditions. It is important to note that this effect was present despite the fact that 1) none of the participants had any prior experience with tDCS and 2) every participant took part in only one condition so that they did not have a reference frame to which to compare their experience. It is likely that the actual distinguishability can be much stronger in many studies using repeated measures and/or participants with prior exposure to tDCS [@o2012rethinking]. Given that tDCS is a potent placebo-inducing procedure both in the clinical  [@aslaksen2014effect] and cognitive domains [@turi2017placebo; @turi2018cogplac], there seems to be an urgent need to develop better active sham protocols to effectively maintain blinding, eg., by using computational modeling to mimic the cutaneous sensations while minimizing the magnitude of the induced intracranial electric field.
 
 
 <!--

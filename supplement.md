@@ -12,6 +12,8 @@ author:
   footnote: 2
 - name: Andrea Antal
   footnote: 1,3
+- name: Walter Paulus
+  footnote: 1
 - name: Josephine Groot
   footnote: 2,4
 - name: Guy E. Hawkins
@@ -27,7 +29,7 @@ author:
   corresponding: matthias.mittner@uit.no
 affiliation:
 - number: 1
-  name: Department of Clinical Neurophysiology, University Medical Center Göttingen
+  name: Department of Clinical Neurophysiology, University Medical Center Goettingen
 - number: 2
   name: Department of Psychology, University of Tromsø 
 - number: 3
