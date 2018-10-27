@@ -91,7 +91,7 @@ A 7-point Likert-scale was used to assess the amount of discomfort and the blind
 
 ## Analysis method
 
-We used Bayesian estimation of ordinal probit regression models [@buerkner_vuorre_2018] designed specifically for analysing ordinal data [@liddell2018analyzing]. We report our results in terms of posterior mean parameters along with the 95% highest-density interval (HDI) calculated from the posterior distribution. For more details, see Supplemental Analysis.
+We used Bayesian estimation of ordinal probit regression models [@buerkner_vuorre_2018] designed specifically for analysing ordinal data [@liddell2018analyzing]. We report our results in terms of posterior mean parameters along with the 95% highest-density interval (HDI) calculated from the posterior distribution. This measure quantifies the interval in which the true parameter is located with 95% probability given the applied model. We conclude that a parameter is different from zero if the 95% interval excludes zero. For more details, see Supplemental Analysis.
 
 # Results and Discussion
 
