@@ -57,12 +57,8 @@ linenumbers: true
 bibliography: references.bib 
 acknowledgements: |
   AT received support from Lundbeckfonden (R118-A11308) and Novo Nordisk Fonden by a synergy grant on Biophysically adjusted state-informed cortex stimulation (BASICS; NNF14OC0011413).
-contribution: | 
-  Must include all authors, identified by initials, for example:
-  A.A. conceived the experiment(s),  A.A. and B.A. conducted the experiment(s), C.A. and D.A. analysed the results.  All authors reviewed the manuscript.
 additionalinformation: |
-  To include, in this order: \textbf{Accession codes} (where applicable); \textbf{Competing financial interests} (mandatory statement).
-  The corresponding author is responsible for submitting a \href{http://www.nature.com/srep/policies/index.html#competing}{competing financial interests statement} on behalf of all authors of the paper. This statement must be included in the submitted article file.
+  We wish to confirm that there are no known conflicts of interest associated with this publication and there has been no significant financial support for this work that could have influenced its outcome.
 ...
 
 # Introduction

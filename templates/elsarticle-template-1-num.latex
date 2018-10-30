@@ -221,6 +221,8 @@ $body$
 %%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
 %%   \citet{key}         ==>>  Author [#]
 
+
+
 %% References with bibTeX database:
 
 \bibliographystyle{elsarticle-harv}
@@ -241,6 +243,24 @@ $body$
 % \bibitem{}
 
 % \end{thebibliography}
+
+
+$if(acknowledgements)$
+\section*{Acknowledgements}
+$acknowledgements$
+$endif$
+
+$if(contribution)$
+\section*{Author contributions statement}
+$contribution$
+$endif$
+
+
+$if(additionalinformation)$
+\section*{Additional information}
+$additionalinformation$
+$additionalinformation$
+$endif$
 
 
 \end{document}
