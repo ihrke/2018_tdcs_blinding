@@ -1,8 +1,10 @@
 # Blinding is compromised for transcranial direct current stimulation at 1 mA for 20 minutes in young healthy adults
 
+[![DOI](https://zenodo.org/badge/150225380.svg)](https://zenodo.org/badge/latestdoi/150225380)
+
 This repository contains additional information for our paper "Blinding is compromised for transcranial direct current stimulation at 1 mA for 20 minutes in young healthy adults". The sources for the paper and supplemental are in `paper.md` and `supplement.md` (markdown-files). Data and analysis files can be found in `analysis`.
 
-The preprint for the paper is at <https://psyarxiv.com/>.
+The preprint for the paper is at <https://psyarxiv.com/3pdnc>.
 
 ## Notes
 
