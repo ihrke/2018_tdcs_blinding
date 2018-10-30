@@ -1,8 +1,10 @@
-# markdown-paper
+# Blinding is compromised for transcranial direct current stimulation at 1 mA for 20 minutes in young healthy adults
 
-Scientific paper in markdown using LaTeX.
+This repository contains additional information for our paper "Blinding is compromised for transcranial direct current stimulation at 1 mA for 20 minutes in young healthy adults". The sources for the paper and supplemental are in `paper.md` and `supplement.md` (markdown-files). Data and analysis files can be found in `analysis`.
 
-See [markdown-talk](https://github.com/ihrke/markdown-talk) for template for a beamer-based presentation.
+The preprint for the paper is at <https://psyarxiv.com/>.
+
+## Notes
 
 The source of this document is written in [markdown](https://daringfireball.net/projects/markdown/) (file `paper.md`) and translated to latex using [pandoc](http://pandoc.org/) and customized templates located in the `templates` folder. References are stored in `references.bib` in [bibtex](http://www.bibtex.org/) format.
 
@@ -10,7 +12,7 @@ The `Makefile` details how the translation works. If you are on linux, simply ca
 
 So far, I have used it only with `./templates/elsarticle-template-1.latex` but others may follow.
 
-## Usage
+### Usage
 
 1. Install the dependencies
 
@@ -28,25 +30,7 @@ So far, I have used it only with `./templates/elsarticle-template-1.latex` but o
 
 NOTE: `paper.md` contains example code for tables, figures, equations, references and so on.
 
-## Recommended Editor/Tools
-
-I think it works very nicely to write markdown-based papers in the [atom](https://atom.io/) editor. The following packages are useful:
-
-- [autocomplete-bibtex](https://github.com/apcshields/autocomplete-bibtex)
-
-    Allows to get a drop-down list of references when writing `@citation`. However, it is currently necessary to put a global `.bib` file into the config file `config.cson` (see [documentation](https://atom.io/docs/latest/customizing-atom#advanced-configuration)):
-
-    ~~~{yaml}
-    'autocomplete-bibtex':
-      'references': [
-        '/path/to/references.bib'
-        '/path/to/references.json'
-      ]
-    ~~~
-- [markdown-preview](https://github.com/burodepeper/language-markdown) for nice syntax highlighting
-- [pdf-view](https://github.com/izuzak/atom-pdf-view) for viewing the PDF in Atom directly
-
-## Dependencies
+### Dependencies
 
 - [pandoc](http://pandoc.org/)
 - [pandoc-fignos](https://github.com/tomduck/pandoc-fignos)
