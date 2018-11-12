@@ -47,11 +47,11 @@ affiliation:
 bibliography: references.bib   
 ...
 
-# Supplemental Material 
+<!--# Supplemental Material 
 
 ## Stimulation administration
 
- The stimulator was operating in study mode:  The active sham and the real stimulation protocols were assigned to pseudo-codes B and C, respectively.  The display window of the stimulator was covered 30s after the start of the stimulation by a non-transparent material. This was necessary to avoid accidental unblinding of the experimenter. 
+ The stimulator was operating in study mode:  The active sham and the real stimulation protocols were assigned to pseudo-codes B and C, respectively.  The display window of the stimulator was covered 30s after the start of the stimulation by a non-transparent material. This was necessary to avoid accidental unblinding of the experimenter. -->
  
 # Supplemental Analyses
 
