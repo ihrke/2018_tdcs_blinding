@@ -1,6 +1,6 @@
 ---
 title:  'Blinding is compromised for transcranial direct current stimulation at 1 mA for 20 minutes in young healthy adults'
-journal: 'Brain Stimulation'
+journal: 'Cortex'
 author:
 - name: Zsolt Turi
   footnote: 1
@@ -85,13 +85,10 @@ The dataset contains subjective reports of 192 healthy participants (134 female,
 
 ## Experimenter
 
-The experimenter (author J.G.), who was responsible for the recruitment and data collection in Amsterdam was a native Dutch speaker. She obtained a first aid certification on 2-11-2017. The experimenter had a background in clinical neuropsychology and cognitive neuroscience and experience with performing EEG, MEG, and (f)MRI experiments (certified 7T MR operator). As part of her training, the experimenter has taken knowledge of the safety and ethical considerations of transcranial electrical stimulation. Before the start of the pilot measurement, the experimenter received a series of written, video and in-person training about the correct application of tDCS and was supervised during the pilot sessions by a researcher with experience in tDCS (by Anne Trutti, University Leiden, The Netherlands) and met the requirement of performing tDCS on her own. 
+The experimenters were responsible for the recruitment and data collection in each center (Amsterdam, Göttingen, Tromsø). As part of the training, all experimenters have taken knowledge of the safety, ethical considerations of transcranial electrical stimulation and about the principles of good scientific practice. Before the start of the pilot measurement, the experimenters received a series of written, video and in-person training about the correct application of tDCS. The training ensured the  quality of electrode preparation is appropriate, including finding the target location, cleaning the skin, preparing the skin-electrode interface, applying the conductive medium. The experimenters followed a fully pre-registered protocol, standardized among labs. In each lab, the experimenters collected at least two pilot measurements before the data collection of the real experiment. Data from the pilot measurements were not included to the final data analysis. During the pilot experiments, the experimenters were supervised by a researcher with history of prior experience in tDCS. The real data collection started when the experimenter met the requirement of performing tDCS independently. 
 
-The experimenter, who was responsible for the recruitment and data collection in Goettingen was a native German, male medical student (7th semester). The experimenter was carefully trained about the principles of Good Clinical Practice, the application of tDCS and how to interact with human participants in the laboratory environment over several weeks before the start of the data collection. His training and in particular, the quality of electrode preparation (finding the target location, cleaning the skin, preparing the skin-electrode interface, applying the conductive medium) was carefully supervised by the author Z.T.   
+The experimenter in Amsterdam was a native Dutch speaker (author J.G.), whereas the experimenter in Goettingen was a native German, male medical student (6-7th semester). Three experimenters collected the data in Tromsø, (including author N.M.B.). Two were native Norwegian speakers (one female, one male), whereas N.M.B. is fluent Norwegian speaker at C1 level (according to the Common European Framework of Reference for Languages). 
 
-Three experimenters collected the data in Tromsø, (including author N.M.B.). Two were native Norwegian speakers (one female, one male), whereas N.M.B. is fluent Norwegian at C1 level (according to the Common European Framework of Reference for Languages ). N.M.B. completed the 13th Practical Course in Non-invasive Brain Stimulation in Goettingen. Before the start of the pilot measurements, all experimenters were carefully trained by the authors G.C. and M.M. 
-
-In summary, all experimenters received an extensive training about the correct appliation of tDCS and were able to perform data collection independently. The experimenters followed a fully pre-registered protocol, standardized among labs. In each lab, the experimenters collected at least two pilot measurements before the data collection of the real experiment. Data from the pilot measurements were not included to the final data analysis. 
 
 ## Electrode preparation and stimulation protocols 
 
