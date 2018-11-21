@@ -51,9 +51,19 @@ keyword:
   - active sham tDCS
   - placebo
 
-abstract: |
-  Transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation method that is frequently used to study cortical excitability changes and their impact on cognitive functions in humans. While most stimulators are capable of operating in double-blind mode, the amount of discomfort experienced during tDCS may break blinding. Therefore, specifically designed sham stimulation protocols are being used. The "fade-in, short-stimulation, fade-out" (FSF) protocol has been used in hundreds of studies and is commonly believed to be indistinguishable from real stimulation applied at 1 mA for 20 minutes. We analyzed subjective reports of 192 volunteers, who either received real tDCS (n=96) or FSF tDCS (n=96). Participants reported more discomfort for real tDCS and correctly guessed the condition above chance-level. These findings indicate that FSF does not ensure complete blinding and that better active sham protocols are needed.
+abstract: |+
+  *Background:* Transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation method that is frequently used to study cortical excitability changes and their impact on cognitive functions in humans. While most stimulators are capable of operating in double-blind mode, the amount of discomfort experienced during tDCS may break blinding. Therefore, specifically designed sham stimulation protocols are being used. The "fade-in, short-stimulation, fade-out" (FSF) protocol has been used in hundreds of studies and is commonly believed to be indistinguishable from real stimulation applied at 1 mA for 20 minutes.
+  
+  \noindent {\em Objective:} The objective of this study was to validate the FSF protocol' effectiveness in blinding tDCS at 1 mA for 20 minutes above prefrontal cortex.
+  
+  \noindent {\em Methods:} We analyzed subjective reports of 192 volunteers, who either received real tDCS (n=96) or FSF tDCS (n=96). Data was analyzed using Bayesian ordered regression models.
+  
+  \noindent {\em Results:} Participants reported more discomfort for real tDCS and correctly guessed the condition above chance-level.
+  
+  \noindent {\em Conclusion:} Our findings indicate that FSF does not ensure complete blinding and that better active sham protocols are needed.
+
 linenumbers: true
+doublespacing: true
 bibliography: references.bib 
 acknowledgements: |
   AT received support from Lundbeckfonden (R118-A11308) and Novo Nordisk Fonden by a synergy grant on Biophysically adjusted state-informed cortex stimulation (BASICS; NNF14OC0011413).

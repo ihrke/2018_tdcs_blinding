@@ -31,7 +31,6 @@
             urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
             linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
             pdfborder={0 0 0}}
-
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
 
@@ -103,6 +102,11 @@
 \biboptions{semicolon,round}
 
 \journal{$if(journal)$$journal$$else$Cortex$endif$}
+
+$if(doublespacing)$
+\usepackage{setspace}
+\doublespacing
+$endif$
 
 \begin{document}
 
