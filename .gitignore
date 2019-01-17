@@ -10,3 +10,7 @@
 *.spl
 *.html
 cache/*
+._*
+.vscode
+*.swp
+~$*
