@@ -23,10 +23,10 @@ ${SUPPLEMENT}.pdf: ${SUPPLEMENT}.tex ${BIBLIOGRAPHY}
 	pdflatex ${SUPPLEMENT}.tex
 
 ${PAPER}.tex: ${PAPER}.md ${BIBLIOGRAPHY} ${TEMPLATE}
-	${PANDOC} -s -f markdown -t latex  --filter pandoc-fignos --filter pandoc-citeproc ${USE_NATBIB} ${PAPER}.md -o ${PAPER}.tex --template ${TEMPLATE} --bibliography ${BIBLIOGRAPHY}
+	${PANDOC} -s -f markdown -t latex  --filter pandoc-fignos --filter filters/latex_textred.py --filter pandoc-citeproc ${USE_NATBIB} ${PAPER}.md -o ${PAPER}.tex --template ${TEMPLATE} --bibliography ${BIBLIOGRAPHY}
 
 ${SUPPLEMENT}.tex: ${SUPPLEMENT}.md ${BIBLIOGRAPHY} ${TEMPLATE}
-	${PANDOC} -s -f markdown -t latex  --filter pandoc-fignos --filter pandoc-citeproc ${USE_NATBIB} ${SUPPLEMENT}.md -o ${SUPPLEMENT}.tex --template ${TEMPLATE} --bibliography ${BIBLIOGRAPHY}
+	${PANDOC} -s -f markdown -t latex  --filter filters/latex_textred.py --filter pandoc-fignos --filter pandoc-citeproc ${USE_NATBIB} ${SUPPLEMENT}.md -o ${SUPPLEMENT}.tex --template ${TEMPLATE} --bibliography ${BIBLIOGRAPHY}
 
 
 watch: $(MD_FILES) $(BIBLIOGRAPHY)
