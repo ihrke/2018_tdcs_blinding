@@ -263,7 +263,6 @@ $endif$
 $if(additionalinformation)$
 \section*{Additional information}
 $additionalinformation$
-$additionalinformation$
 $endif$
 
 
